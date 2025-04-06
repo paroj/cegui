@@ -164,6 +164,7 @@ void CEGuiOgreBaseApplication::setup()
     const Ogre::String& mediaDir = getDefaultMediaDir();
     // add default locations
     rgm.addResourceLocation(mediaDir + "/Main", "FileSystem", ResourceGroupManager::INTERNAL_RESOURCE_GROUP_NAME);
+    rgm.addResourceLocation(mediaDir + "/RTShaderLib", "FileSystem", ResourceGroupManager::INTERNAL_RESOURCE_GROUP_NAME);
     rgm.addResourceLocation(mediaDir + "/RTShaderLib/GLSL", "FileSystem", ResourceGroupManager::INTERNAL_RESOURCE_GROUP_NAME);
     rgm.addResourceLocation(mediaDir + "/RTShaderLib/HLSL_Cg", "FileSystem", ResourceGroupManager::INTERNAL_RESOURCE_GROUP_NAME);
 
